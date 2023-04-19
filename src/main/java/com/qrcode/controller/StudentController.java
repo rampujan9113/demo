@@ -55,9 +55,10 @@ public class StudentController {
 		return ResponseEntity.ok(studentService.addStudent(student));
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("git/{id}")
 	public ResponseEntity<Student> findById(@PathVariable("id") int id){
 		return ResponseEntity.ok(studentService.findById(id));
+       
 	}
 
 }
